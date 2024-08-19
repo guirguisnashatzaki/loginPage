@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel With Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <main>
+        <form id="next-trip-form">
+            <h1>Prepare Your Next Trip With Me!</h1>
+            <p>Please take a moment to fill out this form</p>
+            <div id="full_name">
+                <label for="full_name">Full Name:</label>
+                <input type="text" required id="full_name" name="full_name">
+            </div>
+            <div id="email">
+                <label for="email">Email:</label>
+                <input type="email" required id="email" name="email" placeholder="">
+            </div>
+            <div id="tel">
+                <label for="tel">Phone:</label>
+                <input type="tel" required id="tel" name="tel" placeholder="" minlength="11" maxlength="14">
+            </div>
+            <div id="gender">
+                <label>Gender:</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label class="radioLabel" for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label class="radioLabel"  for="female">Female</label>
+                </div>
+            </div>
+            <div class="date">
+                <label for="arrival_date">Arriving Date:</label>
+                <input type="date" id="arrival_date" name="arrival_date">
+            </div>
+            <div class="date">
+                <label for="departure_date">Departure Date:</label>
+                <input type="date" id="departure_date" name="departure_date">
+            </div>
+            <div id="profile">
+                <label for="profile_picture">Profile Picture:</label>
+                <input type="file" id="profile_picture" name="profile_picture">
+            </div>
+            <div id="passport">
+                <label for="passport">Passport:</label>
+                <input type="file" id="passport" name="passport">
+            </div>
+            <div>
+                <label for="cities">Where Would You Like to Travel?</label>
+                <select id="cities" name="cities">
+                    <option value=""></option>
+                    <option value="Cairo">Cairo</option>
+                    <option value="Alexandria">Alexandria</option>
+                    <option value="Hurghada">Hurghada</option>
+                    <option value="Aswan">Aswan</option>
+                    <option value="Sharm">Sharm</option>
+                </select>
+            </div>
+            <div>
+                <label>Services That You Needed:</label>
+                <div>
+                    <input type="checkbox" name="services" value="Rental Car">
+                    <label class="radioLabel" for="services">Rental Car</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="services" value="hotel_accommodations">
+                    <label class="radioLabel" for="services">Hotel Accommodations</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="services" value="airline_tickets">
+                    <label class="radioLabel" for="services">Airline Tickets</label>
+                </div>
+            </div>
+            <div>
+                <label for="travel_method">How Will You Travel?</label>
+                <div>
+                    <input type="radio" name="travel_method" id="by_air" value="by_air">
+                    <label class="inline-label radioLabel" for="by_air">By Air</label>
+                </div>
+                <div>
+                    <input type="radio" name="travel_method" id="by_train" value="by_train">
+                    <label class="inline-label radioLabel" for="by_train">By Train</label>
+                </div>
+                <div>
+                    <input type="radio" name="travel_method" id="by_bus" value="by_bus">
+                    <label class="inline-label radioLabel" for="by_bus">By Bus</label>
+                </div>
+                <div>
+                    <input type="radio" name="travel_method" id="by_car" value="by_car">
+                    <label class="inline-label radioLabel" for="by_car">By Car</label>
+                </div>
+            </div>
+            <div>
+                <label for="message">Leave Your Message:</label>
+                <textarea rows="4" id="message" name="message"></textarea>
+            </div>
+            <div>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+
+
+            </form>
+    </main>
+</body>
+</html>  
+
